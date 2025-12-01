@@ -9,7 +9,7 @@ let checksum = "13409e99956a74aaee1856c56889c211116fbc8be2bcbe373986ec9e10f536fc
 let package = Package(
     name: "OpenCV",
     platforms: [
-        .macOS(.v10_13), .iOS(.v12), .macCatalyst(.v13), .visionOS(.v1)
+        .macOS(.v10_13), .iOS(.v12), .macCatalyst(.v13)
     ],
     products: [
         .library(
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "opencv2",
-                      url: "https://github.com/yeatse/opencv-spm/releases/download/\(version)/opencv2.xcframework.zip",
+                      url: "https://github.com/TheOne1006/imgproc-opencv-spm/releases/download/\(version)/opencv2.xcframework.zip",
                       checksum: checksum),
         .target(
             name: "opencv2-dependencies",

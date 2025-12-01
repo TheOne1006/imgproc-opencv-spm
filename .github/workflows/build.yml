@@ -51,6 +51,17 @@ jobs:
               --iphoneos_archs=arm64 \
               --visionos_archs=arm64 \
               --visionsimulator_archs=arm64 \
+              --without calib3d \
+              --without dnn \
+              --without features2d \
+              --without flann \
+              --without gapi \
+              --without highgui \
+              --without ml \
+              --without objdetect \
+              --without photo \
+              --without stitching \
+              --without ts \
               --disable-bitcode -o build
 
       - name: Zip artifact
